@@ -1,6 +1,7 @@
-require "./doc_store/*"
+require "kemal"
 
-# TODO: Write documentation for `DocStore`
-module DocStore
-  # TODO: Put your code here
+get "/" do
+  "Hello Kemal!"
 end
+
+Kemal.run

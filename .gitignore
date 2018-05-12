@@ -2,3 +2,5 @@
 /lib/
 /bin/
 /.shards/
+*.dwarf
+doc_store
