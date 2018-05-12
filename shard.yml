@@ -1,0 +1,13 @@
+name: doc_store
+version: 0.1.0
+
+authors:
+  - Matt Glover <matt.glover@ladbrokescoral.com>
+
+targets:
+  doc_store:
+    main: src/doc_store.cr
+
+crystal: 0.24.2
+
+license: MIT
