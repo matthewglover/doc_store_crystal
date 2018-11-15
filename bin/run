@@ -1,0 +1,21 @@
+#! /bin/sh
+
+# Move to script directory
+cd "$(dirname "$0")"
+cd ../
+
+# Extract environment and executable
+env=$1
+executable=$2
+shift 2
+
+# If bin file then add path to bin dir
+if [ -e "./bin/$executable" ]; then
+  executable="./bin/$executable"
+fi
+
+# Set environment variables
+source ./bin/load_environment.sh "$env"
+
+# Run executable with any args
+$executable $@
