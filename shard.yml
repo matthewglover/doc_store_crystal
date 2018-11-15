@@ -11,7 +11,15 @@ targets:
 crystal: 0.24.2
 
 dependencies:
+  crecto:
+    github: fridgerator/crecto
+  db:
+    github: crystal-lang/crystal-db
   kemal:
     github: kemalcr/kemal
+  micrate:
+    github: amberframework/micrate
+  pg:
+    github: will/crystal-pg
 
 license: MIT
